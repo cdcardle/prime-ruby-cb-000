@@ -33,7 +33,7 @@ def is_prime?(n)
   i = 2
   while i < n
     return false if num % i == 0
-    i += 1   
+    i += 1
   end
   return true
 end
