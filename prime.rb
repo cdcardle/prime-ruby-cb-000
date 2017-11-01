@@ -32,7 +32,7 @@ def is_prime?(n)
   return true if (n == 2 || n == 3)
   i = 2
   while i < n
-    return false if num % i == 0
+    return false if n % i == 0
     i += 1
   end
   return true
