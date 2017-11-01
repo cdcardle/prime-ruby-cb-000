@@ -15,23 +15,12 @@ def prime?(n)
   end
 end
 
-def prime(n)
-  i = 2
-  while i <= Math.sqrt(n)
-    if n % i == 0
-      false
-      i += 1
-    end
-    return true
-  end
-end
-
-
-def is_prime?(n)
+def prime?(n)
   return false if n <= 1
   return true if (n == 2 || n == 3)
+  return false if (n % 2 == 0 || n % 3 == 0)
   i = 2
-  while i < n
+  while i < Math.sqrt(n)
     return false if n % i == 0
     i += 1
   end
